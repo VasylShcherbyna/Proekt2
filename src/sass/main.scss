@@ -1,0 +1,26 @@
+/* === Variables === */
+@import './utils/variables';
+
+/* === Common styles === */
+@import './base/common';
+
+/* === Is-hidden style === */
+@import './utils/is-hidden';
+
+/* === Container styles === */
+@import './base/container';
+
+/* === Visually hidden === */
+@import './utils/visually-hidden';
+
+/* === Layout === */
+@import './layout/main';
+
+/* === Components === */
+@import './components/main';
+
+@import './layout/footer';
+
+@import './layout/spinner';
+
+@import './components/button-thema.scss';

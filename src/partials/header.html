@@ -1,0 +1,95 @@
+<header class="header js-header header-container_home">
+  <div class="container">
+    <!-- фільтр -->
+    <div class="divForFilters">
+      <select
+        name=""
+        id=""
+        label=""
+        class="select js-select"
+        onfocus="this.size=4;"
+        onblur="this.size=1;"
+        onchange="this.size=1; this.blur();"
+      ></select>
+    </div>
+    <!-- Разметка переключателя темы -->
+    <div class="toolbar">
+      <div class="theme-switch">
+        <svg class="theme-switch__icon" role="img" aria-label="Иконка солнца">
+          <use href="./images/sprite.svg#sun"></use>
+        </svg>
+        <div class="theme-switch__control">
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Переключить между тёмной и светлой темой"
+          />
+          <label aria-hidden="true" class="theme-switch__track" for="theme-switch-toggle"> </label>
+          <div aria-hidden="true" class="theme-switch__marker"></div>
+        </div>
+
+        <svg class="theme-switch__icon" aria-label="Иконка луны">
+          <use href="./images/sprite.svg#moon"></use>
+        </svg>
+      </div>
+    </div>
+
+    <nav class="header-nav js-header-nav">
+      <a class="logo link js-logo" href="">
+        <svg class="logo-icon">
+          <use href="./images/sprite.svg#icon-film"></use>
+        </svg>
+        <span class="logo-text">Filmoteka</span>
+      </a>
+      <ul class="navigation-menu-list list">
+        <li class="navigation-list-link">
+          <a class="link navigation-menu-link current js-home_page" id="home" href="">Home</a>
+        </li>
+        <li class="navigation-list-link">
+          <a class="link navigation-menu-link js-lib_page" href="">My library</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Разметка переключателя языков -->
+    <div class="language-checkbox">
+      <span class="text-content">RU</span>
+      <label class="checkbox">
+        <input type="checkbox" class="js-switch-input" id="language-switch-control" checked />
+        <span class="text-content">EN</span>
+      </label>
+    </div>
+    <div class="search">
+      <form class="search-form js-search-form">
+        <input
+          class="search-control js-search-control"
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search movies..."
+        />
+        <button class="search__btn" type="submit">
+          <svg class="search-icon">
+            <use href="./images/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+        <div class="warning visually-hidden">
+          Search result not successful. Enter the correct movie name and
+        </div>
+      </form>
+    </div>
+    <div class="buttons js-buttons visually-hidden">
+      <button
+        class="button_lib btn_watched active-btn js-btn_watched"
+        data-libType="watched"
+        type="button"
+      >
+        Watched
+      </button>
+      <button class="button_lib btn_queue js-btn_queue" type="button" data-libType="queue">
+        Queue
+      </button>
+    </div>
+  </div>
+</header>

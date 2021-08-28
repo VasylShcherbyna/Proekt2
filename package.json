@@ -1,0 +1,32 @@
+{
+  "name": "filmoteka",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://ITeam-by-GOIT.github.io/filmoteka",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /filmoteka/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITeam-by-GOIT/filmoteka.git"
+  },
+  "keywords": [],
+  "author": "ITeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ITeam-by-GOIT/filmoteka/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "parcel-plugin-static-files-copy": "^2.6.0",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "toastr": "^2.1.4"
+  }
+}
